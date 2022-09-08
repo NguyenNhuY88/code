@@ -86,3 +86,14 @@ vector<string> split(const string &str) {
 
     return tokens;
 }
+
+
+//https://en.cppreference.com/w/cpp/regex/regex_match
+/*
+std::regex re("Get|GetValue");
+std::cmatch m;
+std::regex_search("GetValue", m, re);  // returns true, and m[0] contains "Get"
+std::regex_match ("GetValue", m, re);  // returns true, and m[0] contains "GetValue"
+std::regex_search("GetValues", m, re); // returns true, and m[0] contains "Get"
+std::regex_match ("GetValues", m, re); // returns false
+*/
